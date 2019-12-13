@@ -358,7 +358,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         'Character Based CNN for text classification')
     parser.add_argument('--data_path', type=str,
-                        default='./data/train.csv')
+                        default='./data/dataset.csv')
     parser.add_argument('--validation_split', type=float, default=0.2)
     parser.add_argument('--label_column', type=str, default='Sentiment')
     parser.add_argument('--text_column', type=str, default='SentimentText')
@@ -367,8 +367,8 @@ if __name__ == "__main__":
     parser.add_argument('--encoding', type=str, default='utf-8')
     parser.add_argument('--sep', type=str, default=',')
     parser.add_argument('--steps', nargs='+', default=['lower'])
-    parser.add_argument('--group_labels', type=int, default=1, choices=[0, 1])
-    parser.add_argument('--ignore_center', type=int, default=1, choices=[0, 1])
+    parser.add_argument('--group_labels', type=int, default=0, choices=[0, 1])
+    parser.add_argument('--ignore_center', type=int, default=0, choices=[0, 1])
     parser.add_argument('--label_ignored', type=int, default=None)
     parser.add_argument('--ratio', type=float, default=1)
     parser.add_argument('--balance', type=int, default=0, choices=[0, 1])

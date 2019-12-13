@@ -24,7 +24,7 @@ def load_data(args):
     chunks = pd.read_csv(args.data_path,
                          usecols=[args.text_column, args.label_column],
                          chunksize=args.chunksize,
-                         encoding=args.encoding,
+                         encoding='ISO-8859-1',
                          nrows=args.max_rows,
                          sep=args.sep)
     texts = []
