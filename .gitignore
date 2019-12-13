@@ -1,7 +1,7 @@
 notebooks/
 .ipynb_checkpoints/
-data/
+#data/
 src/__pycache__/
 .vscode/
-logs/
-models/
+#logs/
+#models/
